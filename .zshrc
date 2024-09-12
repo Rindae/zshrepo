@@ -13,3 +13,5 @@ fi
 
 
 alias ls="eza --icons=always"
+
+source ~/powerlevel10k/powerlevel10k.zsh-theme
