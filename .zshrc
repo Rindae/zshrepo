@@ -14,6 +14,23 @@ fi
 
 alias ls="eza --icons=always"
 
+# ---- Bat (better cat) -----
+
+
+alias cat="bat"
+
+
+function push {
+     git add .
+     if [ "$1" != "" ] # or better, if [ -n "$1" ]
+     then
+         git commit -m "$1"
+     else
+         git commit -m update
+     fi
+     git push
+}
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 clear
